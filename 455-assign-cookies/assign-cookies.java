@@ -5,10 +5,7 @@ class Solution {
         Arrays.sort(g);
         Arrays.sort(s);
 
-        while(sSize < s.length){
-            if(gSize >= g.length){
-                    break;
-            }
+        while(sSize < s.length && gSize < g.length){
             if(g[gSize] <= s[sSize]){
                 gSize++;
             }
